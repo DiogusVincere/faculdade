@@ -1,1 +1,1 @@
-# exerc-cioAULA02-IA
+# exercicios aula 02 IA BIG DATA
