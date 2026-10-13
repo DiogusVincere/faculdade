@@ -69,6 +69,7 @@ class _HomePageState extends State<HomePage> {
             // Campo para inserir o nome
             TextField(
               controller: _nameController,
+              onChanged: (_) => setState(() {}), // atualiza a saudação enquanto digita
               decoration: InputDecoration(
                 labelText: 'Digite seu nome',
                 border: OutlineInputBorder(

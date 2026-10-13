@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contador 2</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16"></script>
 </head>
 <body>
-    <template>
-        <div>
-            <p>Contador: {{ contador }}</p>
-            <button @click="incrementarContador">Incrementar</button>
-        </div>
-    </template>
+    <!-- Versão em página única do componente: o trecho original era um componente
+         de arquivo único (.vue) colado dentro do HTML e não rodava sem bundler. -->
+    <div id="app">
+        <p>Contador: {{ contador }}</p>
+        <button @click="incrementarContador">Incrementar</button>
+    </div>
 
     <script>
-        export default {
+        new Vue({
+            el: '#app',
             data() {
                 return { contador: 0 };
             },
@@ -23,7 +25,7 @@
                     this.contador++;
                 }
             },
-        };
+        });
     </script>
 </body>
 </html>

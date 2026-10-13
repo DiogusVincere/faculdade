@@ -1,4 +1,4 @@
-class Automóvel {
+class Automovel {
     constructor(cor, modelo, combustivel, qntdRodas){
         this.cor = cor;
         this.modelo = modelo;
@@ -19,17 +19,17 @@ class Automóvel {
     }
 
     abrir_vidro() { 
-        this.vidro_aberto = true; 
+        this.vidroAberto = true; 
         console.log(`O vidro do ${this.modelo} está aberto.`); 
     } 
 
     descer_vidro() { 
-        this.vidro_aberto = false; 
+        this.vidroAberto = false; 
         console.log(`O vidro do ${this.modelo} está fechado.`); 
     } 
 } 
 
-class Carro extends Automóvel {
+class Carro extends Automovel {
     constructor(cor, modelo, combustivel, qntdRodas, qntdPortas) {
     super(cor, modelo, combustivel, qntdRodas);
     this.qntdPortas = qntdPortas;
@@ -78,25 +78,25 @@ class Caminhao extends Automovel {
 
 const meuCarro = new Carro("vermelho", "Fusca", "Gasolina", 4, 4); 
 console.log(`Carro: ${meuCarro.modelo}, Cor: ${meuCarro.cor}`); 
-meuCarro.ligar_motor(); 
+meuCarro.ligarMotor(); 
 meuCarro.abrir_vidro(); 
 meuCarro.abrir_porta(); 
 meuCarro.descer_vidro(); 
-meuCarro.desligar_motor(); 
+meuCarro.desligarMotor(); 
 meuCarro.temTurbo();
 
 // Testando a classe Moto 
 const minhaMoto = new Moto("azul", "Honda CB500", "Gasolina", 2, "esportiva"); 
 console.log(`Moto: ${minhaMoto.modelo}, Cor: ${minhaMoto.cor}, Tipo: ${minhaMoto.tipo}`); 
-minhaMoto.ligar_motor(); 
+minhaMoto.ligarMotor(); 
 minhaMoto.empinar(); 
 minhaMoto.descer_vidro(); 
-minhaMoto.desligar_motor(); 
+minhaMoto.desligarMotor(); 
 
 // Testando a classe Caminhao 
 const meuCaminhao = new Caminhao("amarelo", "Volvo FH", "Diesel", 6, 15000); 
 console.log(`Caminhão: ${meuCaminhao.modelo}, Cor: ${meuCaminhao.cor}, Capacidade de carga: ${meuCaminhao.capacidade_carga} kg`); 
-meuCaminhao.ligar_motor(); 
+meuCaminhao.ligarMotor(); 
 meuCaminhao.carregar(); 
 meuCaminhao.descer_vidro(); 
-meuCaminhao.desligar_motor();
+meuCaminhao.desligarMotor();

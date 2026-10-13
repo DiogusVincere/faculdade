@@ -2,9 +2,9 @@
 const clinica = []
 clinica.push('Lontra','Macaco','Lemore');
 console.log(clinica)
-clinica.pop(0);
+clinica.shift();
 console.log(clinica)
-clinica.pop(1);
+clinica.shift();
 console.log(clinica)
-clinica.pop(2);
+clinica.shift();
 console.log(clinica)
