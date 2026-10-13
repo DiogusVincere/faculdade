@@ -1,0 +1,6 @@
+{
+  "usuario": [
+    { "id": 1, "email": "teste@exemplo.com", "senha": "123456", "nome": "Usuário Teste" }
+  ],
+  "cadastro-usuario": []
+}
