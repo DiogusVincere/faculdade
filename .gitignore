@@ -1,0 +1,21 @@
+# Flutter / Dart
+.idea/
+build/
+.dart_tool/
+*.iml
+.flutter-plugins*
+
+# Python
+__pycache__/
+.ipynb_checkpoints/
+.env
+venv/
+*.sqlite3
+
+# Node
+node_modules/
+dist/
+
+# Sistema operacional
+Thumbs.db
+.DS_Store
